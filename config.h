@@ -66,7 +66,7 @@ static const char unknown_str[] = "###";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command, "%s  ###  ", "paste -sd' ' ~/note" },
+	{ run_command, "%s  |  ", "paste -sd' ' ~/note" },
 	{ run_command, "%s  ",         "if (( $(date +%s) % 60 == 0 )); then openssl rand -hex 8 > /tmp/.RND; fi; cat /tmp/.RND" },
 	{ datetime, "%s  ",           "%F %T %s" },
 	{ run_command, "%s  ", "echo \"scale=5; (1750959000 - $(date +%s)) / 60 / 60 / 24\" | bc" },
