@@ -69,5 +69,5 @@ static const struct arg args[] = {
 	{ run_command, "%s  |  ", "paste -sd' ' ~/note" },
 	{ run_command, "%s  ",         "if (( $(date +%s) % 60 == 0 )); then openssl rand -hex 8 > /tmp/.RND; fi; cat /tmp/.RND" },
 	{ datetime, "%s  ",           "%F %T %s" },
-	{ hostname, "%s   ",           NULL },
+	{ hostname, "%s ",           NULL },
 };
