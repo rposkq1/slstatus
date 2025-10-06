@@ -68,7 +68,7 @@ static const struct arg args[] = {
 	/* function format          argument */
 	{ run_command, "%s  |  ", "paste -sd' ' ~/note" },
 	{ run_command, "%s  ",    "if (( $(date +%s) % 60 == 0 )); then openssl rand -hex 8 > /tmp/.RND; fi; cat /tmp/.RND" },
-	{ run_command, "%s  ",    "amixer get Master | awk -F'[][]' 'END{ print $2 }'" },
+	{ alsa_master_vol, "%s  ",    NULL },
 	{ datetime, "%s  ",       "%F %T %s" },
 	{ hostname, "%s ",         NULL },
 };
