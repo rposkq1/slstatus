@@ -71,4 +71,5 @@ static const struct arg args[] = {
 	{ alsa_master_vol, "%s  ",    NULL },
 	{ datetime, "%s  ",       "%F %T %s" },
 	{ hostname, "%s ",         NULL },
+	{ battery_perc, "%s%% ",         "BAT0" },
 };
